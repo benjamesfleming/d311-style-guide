@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>D301 StyleGuide Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles/index.scss" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper my-4">
+      <h1 style="margin-top: 1em;">Colors</h1>
+      <hr />
+
+      <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+      <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+      <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+      <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+      <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+      <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+      <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+      <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+      <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+
+      <h1 style="margin-top: 1em;">Buttons</h1>
+      <hr />
+
+      <h1 style="margin-top: 1em;">Inputs</h1>
+      <hr />
+
+      <h1 style="margin-top: 1em;">Progress Bars</h1>
+      <hr />
+
+      <div id="fat-bar" class="progress-bar"></div>
+      <div id="carb-bar" class="progress-bar"></div>
+      <div id="protin-bar" class="progress-bar"></div>
+
+      <h1 style="margin-top: 1em;">Forms</h1>
+      <hr />
+
+      <div class="register-form wrapper">
+        <!-- Step Count -->
+        <ul class="form-steps py-4 rounded shadow bg-light"></ul>
+
+        <!-- Register Form -->
+        <form class="form p-4 rounded shadow bg-light" action="">
+          <h4 class="">Form Title</h4>
+          <div class="form-carousel">
+            <!-- Section 1.  -->
+            <section class="bg-warning p-4" data-step="Sign-Up">
+              Section 1
+            </section>
+            <section class="bg-danger p-4" data-step="Details">
+              Section 2
+            </section>
+            <section class="bg-danger p-4" data-step="Goals">
+              Section 3
+            </section>
+            <section class="bg-dark p-4" data-step="Confirm">
+              Section 4
+            </section>
+          </div>
+          <div class="d-flex justify-content-between pt-4">
+            <span
+              >Already have an account?
+              <a class="text-dark font-weight-bold" href="">Log in.</a></span
+            >
+            <div>
+              <input
+                class="prev-btn bg-transparent border-0"
+                type="button"
+                value="Back"
+              />
+              <input class="next-btn" type="button" value="Continue" />
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <h1 style="margin-top: 1em;">Tables</h1>
+      <hr />
+
+      <div class="table container rounded shadow bg-light">
+        <div class="row p-4 ripple">
+          <div class="col-5">1 of 3</div>
+          <div class="col">2 of 3</div>
+          <div class="col">3 of 3</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
